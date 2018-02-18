@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.progressbarmenu.MainActivity"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_margin="20dp"
+    android:orientation="horizontal"
+    android:background="@android:color/background_dark"
+    android:baselineAligned="true"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/background_dark"
+
+        >
+        <TextView
+            android:id="@+id/red_rec"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/holo_red_dark"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/background_dark"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/blue_rec"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_blue_dark"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            />
+
+    </LinearLayout>
+
+  </LinearLayout>
+    <SeekBar
+        android:id="@+id/simpleSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progress="2"
+        android:padding="16dp"
+        android:max="255"
+
+        />
+
+</LinearLayout>
+
+
